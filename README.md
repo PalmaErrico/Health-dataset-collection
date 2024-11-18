@@ -2,8 +2,8 @@
 
 
 ## **DATASET1: Set di dati di balistocardiografia basata sul letto**
-ARTICOLO :https://www.mdpi.com/1424-8220/21/1/156 
-DATASET:https://ieee-dataport.org/open-access/bed-based-ballistocardiography-dataset
+LINK ARTICOLO :https://www.mdpi.com/1424-8220/21/1/156 
+LINK DATASET:https://ieee-dataport.org/open-access/bed-based-ballistocardiography-dataset
 
 La Kansas State University ha raccolto un dataset cardiaco formato da 40 partecipanti( 4 dei quali erano stati o erano attualmente diagnosticati con una patologia cardiaca), di cui 17 maschi, secondo il protocollo IRB n. 9386 della Kansas State University, include segnali di ballistocardiogramma (BCG), elettrocardiogramma (ECG) sincronizzati nel tempo, fotopletismogramma (PPG) e onde di pressione sanguigna. 
 
@@ -47,9 +47,10 @@ L'articolo descrive un sistema di acquisizione basato sul letto per monitorare p
 ## **DATASET2: Un set di dati di segni vitali del balistocardiogramma con segnali di sensori di riferimento in ambienti di sonno naturali**
 
 
-Figshare DATASET: https://figshare.com/articles/dataset/A_ballistocardiogram_dataset_with_reference_sensor_signals_in_long-term_natural_sleep_environments/26013157?file=46976602 
 
-ARTICOLO CORRELATO:https://www.nature.com/articles/s41597-024-03950-5#Tab1 
+LINK DATASET (Figshare ): https://figshare.com/articles/dataset/A_ballistocardiogram_dataset_with_reference_sensor_signals_in_long-term_natural_sleep_environments/26013157?file=46976602 
+
+lINK ARTICOLO https://www.nature.com/articles/s41597-024-03950-5#Tab1 
 
 La raccolta dati è stata condotta nei locali della Beijing Sport University da novembre 2023 a gennaio 2024.
 Questo dataset è stato progettato per supportare la ricerca avanzata nel monitoraggio discreto del sonno e nella valutazione della sua qualità. Questo dataset include dati ballistocardiografici (BCG) continui di 32 partecipanti sani ((16 maschi e 16 femmine) della Beijing Sport University, di età compresa tra 19 e 27 anni (media = 23,03, deviazione standard = 2,02).
@@ -99,8 +100,7 @@ Inoltre, per validare l'accuratezza dei componenti cardiaci e respiratori estrat
 
 ## **DATASET3: Apnea-ECG**
 
-LINK: https://www.kaggle.com/datasets/paulopinheiro/the-apnea-ecg-database-v100/data
-     https://physionet.org/content/apnea-ecg/1.0.0/
+LINK DATASET: https://www.kaggle.com/datasets/paulopinheiro/the-apnea-ecg-database-v100/data OR  https://physionet.org/content/apnea-ecg/1.0.0/
      
 Pubblicato: 10 febbraio 2000. Versione: 1.0.0
 
@@ -123,9 +123,9 @@ Il dataset raccoglie segnali ECG e BCG per monitorare la frequenza cardiaca, pro
 
 ## **DATASET5:Ballistocardiografia con disturbi respiratori**
 
-LINK: https://data.mendeley.com/datasets/9fmfn6kfn7/1
+LINK DATASET: https://data.mendeley.com/datasets/9fmfn6kfn7/1
 
-ARTICOLI CORRELATI: https://www.sciencedirect.com/science/article/abs/pii/S0020025520304849#preview-section-references , https://www.sciencedirect.com/science/article/abs/pii/S0950705119304009 
+LINK ARTICOLI CORRELATI: https://www.sciencedirect.com/science/article/abs/pii/S0020025520304849#preview-section-references , https://www.sciencedirect.com/science/article/abs/pii/S0950705119304009 
 
 Pubblicato: 20 Marzo 2020
 
