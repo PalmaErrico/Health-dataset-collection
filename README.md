@@ -2,29 +2,39 @@
 
 
 ## **DATASET1: Set di dati di balistocardiografia basata sul letto**
-LINK ARTICOLO :https://www.mdpi.com/1424-8220/21/1/156 
+
+LINK ARTICOLO :https://www.mdpi.com/1424-8220/21/1/156
+
 LINK DATASET:https://ieee-dataport.org/open-access/bed-based-ballistocardiography-dataset
 
-La Kansas State University ha raccolto un dataset cardiaco formato da 40 partecipanti( 4 dei quali erano stati o erano attualmente diagnosticati con una patologia cardiaca), di cui 17 maschi, secondo il protocollo IRB n. 9386 della Kansas State University, include segnali di ballistocardiogramma (BCG), elettrocardiogramma (ECG) sincronizzati nel tempo, fotopletismogramma (PPG) e onde di pressione sanguigna. 
+La Kansas State University ha raccolto un dataset cardiaco formato da 40 partecipanti( 4 dei quali erano stati o erano attualmente diagnosticati con una patologia cardiaca), di cui 17 maschi, secondo il protocollo IRB n. 9386 della Kansas State University.
+
+Il dataset include: segnali di ballistocardiogramma (BCG), elettrocardiogramma (ECG) sincronizzati nel tempo, fotopletismogramma (PPG) e onde di pressione sanguigna. 
 
 I Dati acquisiti nel dataset sono tutti allineati nel tempo, abbiamo:
 
--BCG ( ottenuto tramite un sistema ballistocardiografico personalizzato, basato sul letto, 
-   composto da quattro pellicole elettromeccaniche, cioè sensori "EMFI" e quattro celle di 
-   carico);
+- **BCG**, ottenuto tramite un sistema ballistocardiografico personalizzato, basato sul letto,composto da quattro pellicole elettromeccaniche, cioè sensori "EMFI" e quattro celle di carico;
    
--** segnali cardiopolmonari**, quali ECG e PPG, frequenza cardiaca stimata (FC), segnali di impedenza respiratoria e **segnali cardiovascolari**, quali pressione sanguigna, segnale su base battito per battito (sono stati acquisiti con un monitor paziente GE Datex CardioCap 5 e un Finapres Medical Systems Finometer PRO);
+- **segnali cardiopolmonari** (quali ECG e PPG), **frequenza cardiaca stimata** (FC), **segnali di impedenza respiratoria** (pressione sanguigna)e **segnali cardiovascolari** (segnale su base battito per battito), tutti questi sono stati acquisiti con un monitor paziente GE Datex CardioCap 5 e un Finapres Medical Systems Finometer PRO;
 
--pressione dell'arteria brachiale (reBAP), volume sistolico (SV), pendenza massima della forma d'onda della pressione del dito corrente (dP_dt) e l'intervallo tra i battiti (IBI) (sono stati ricostruiti utilizzando il metodo ModelFlow dopo aver corretto per età, sesso, peso e altezza.)
+- **pressione dell'arteria brachiale** (reBAP), **volume sistolico** (SV), **pendenza massima della forma d'onda della pressione del dito corrente** (dP_dt) e **intervallo tra i battiti** (IBI), sono stati ricostruiti utilizzando il metodo ModelFlow dopo aver corretto per età, sesso, peso e altezza.
 
 ![image](https://github.com/user-attachments/assets/61182004-de30-4776-8f5a-ccf9769eb1d6)
 
+**ARTICOLO** 
+
+L'articolo descrive un sistema di acquisizione basato sul letto per monitorare parametri cardiovascolari come pressione arteriosa e frequenza cardiaca, con una preelaborazione dei segnali BCG, ECG e PPG effettuata in MATLAB per ridurre il rumore e compensare i ritardi dei dispositivi di misura. L’analisi, condotta su circa 100 cicli cardiaci, include l’estrazione di parametri battito per battito come il picco J e metriche quali il volume sistolico e il massimo derivato della pressione. 
+I modelli multivariati hanno evidenziato correlazioni più elevate nella stima della pressione sistolica e del volume sistolico, mostrando però variazioni tra i partecipanti. Il sistema è proposto come strumento per la ricerca cardiovascolare, permettendo lo sviluppo di algoritmi senza ulteriori investimenti in hardware.
+
+**INFO PARTECIPANTI**
 
 L'età dei partecipanti variava da 18 a 65 anni e i loro indici di massa corporea (BMI) variavano da 18 a 48 kg/m 2 . Quattro dei partecipanti hanno indicato di avere avuto una qualche forma di condizione cardiovascolare passata o attuale: ipertensione, tachicardia sopraventricolare (trattata tramite ablazione cardiaca), fibrillazione atriale e malattia coronarica.
 
+**RACCOLTA E STRUTTURA DATI**
+
 In totale, sono state raccolte oltre 4,5 ore di dati.
 
-I dati dei partecipanti sono stati raccolti in una tabella MATLAB nel file "Bed_System_Database",i campi includono: ID partecipante, Genere, Età, Altezza_cm, Peso_kg, RawData, Condizione cardiaca ( vine echiesto se il partecipante ha mai ricevuto una diagnosi di anomalie cardiache o malattie come fibrillazione atriale, aritmia o altre condizioni cardiache) e Commenti.
+I dati dei partecipanti sono stati raccolti in una tabella MATLAB nel file "Bed_System_Database",i campi includono: ID partecipante, Genere, Età, Altezza_cm, Peso_kg, RawData, Condizione cardiaca ( vine chiesto se il partecipante ha mai ricevuto una diagnosi di anomalie cardiache o malattie come fibrillazione atriale, aritmia o altre condizioni cardiache) e Commenti.
 
 ![image](https://github.com/user-attachments/assets/fbe475b2-c45c-46b1-a6b2-47f82656df50)
 
@@ -35,13 +45,13 @@ Per ciascun partecipante, la struttura dati del campo RawData è stata configura
 ![image](https://github.com/user-attachments/assets/4dc8065d-1c12-4b41-97c0-3b5b8391d797)
 
 
-I segnali sono stati filtrati e sincronizzati per isolare i componenti cardiaci e ridurre il rumore: BCG (1-10 Hz), PPG e reBAP (passa-basso 10 Hz), ECG (1-40 Hz). I ritardi del Finometer sono stati corretti per una precisa analisi successiva, e i dati elaborati sono archiviati nella tabella "Preprocessed_Database".
+I segnali sono stati filtrati e sincronizzati per isolare i componenti cardiaci e ridurre il rumore: BCG (1-10 Hz), PPG e reBAP (passa-basso 10 Hz), ECG (1-40 Hz).
+
+I ritardi del Finometer sono stati corretti per una precisa analisi successiva, e i dati elaborati sono archiviati nella tabella "Preprocessed_Database".
 
 ![image](https://github.com/user-attachments/assets/c9b4bb30-9ac4-42a8-92c8-cb2dcd040a77)
 
-**ARTICOLO ** 
 
-L'articolo descrive un sistema di acquisizione basato sul letto per monitorare parametri cardiovascolari come pressione arteriosa e frequenza cardiaca, con una preelaborazione dei segnali BCG, ECG e PPG effettuata in MATLAB per ridurre il rumore e compensare i ritardi dei dispositivi di misura. L’analisi, condotta su circa 100 cicli cardiaci, include l’estrazione di parametri battito per battito come il picco J e metriche quali il volume sistolico e il massimo derivato della pressione. I modelli multivariati hanno evidenziato correlazioni più elevate nella stima della pressione sistolica e del volume sistolico, mostrando però variazioni tra i partecipanti. Il sistema è proposto come strumento per la ricerca cardiovascolare, permettendo lo sviluppo di algoritmi senza ulteriori investimenti in hardware.
 
 
 ## **DATASET2: Un set di dati di segni vitali del balistocardiogramma con segnali di sensori di riferimento in ambienti di sonno naturali**
