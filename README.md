@@ -140,12 +140,16 @@ LINK ARTICOLI CORRELATI: https://www.sciencedirect.com/science/article/abs/pii/S
 Pubblicato: 20 Marzo 2020
 
 Versione 1
+
 Questo lavoro è stato supportato dal Progetto di Ricerca Specifica della Facoltà di Informatica e Gestione dell'Università di Hradec Králové e dal progetto PERSONMED—Centro per lo Sviluppo della Medicina Personalizzata nelle Malattie legate all'Età.
 
 
-In questo studio, è stato sviluppato un sistema di rilevamento assistito da computer per i disturbi respiratori. Il sistema ha utilizzato quattro sensori ballistocardiografici incorporati negli angoli di un letto di misurazione. La soluzione proposta si basa su nuove curvature ottimali di Cartan e su una normalizzazione dei dati basata su una stima esperta, che viene mantenuta costante per tutti i soggetti. Dopo l'elaborazione dei dati, è stato progettato un modello CNN profondo a 9 strati per riconoscere i problemi respiratori. L'accuratezza, la sensibilità e la specificità ottenute sono rispettivamente del 96,21%, 88,31% e 98,69%.
+In questo studio, è stato sviluppato un sistema di rilevamento assistito da computer per i disturbi respiratori.
+
+Il sistema ha utilizzato quattro sensori ballistocardiografici incorporati negli angoli di un letto di misurazione. La soluzione proposta si basa su nuove curvature ottimali di Cartan e su una normalizzazione dei dati basata su una stima esperta, che viene mantenuta costante per tutti i soggetti. Dopo l'elaborazione dei dati, è stato progettato un modello CNN profondo a 9 strati per riconoscere i problemi respiratori. L'accuratezza, la sensibilità e la specificità ottenute sono rispettivamente del 96,21%, 88,31% e 98,69%.
 
  Il dataset del sensore BCG è stato ottenuto da 20 soggetti testati, di cui 11 uomini di età compresa tra 23 e 33 anni e 9 donne di età compresa tra 24 e 65 anni, sdraiati su un letto con sensori posizionati ai piedi del letto, hanno effettuato sessioni di trattenuta del respiro di circa 30 secondi.
+ 
  I dettagli sui 20 soggetti e le loro preferenze sono riportati in figura:
 
 ![image](https://github.com/user-attachments/assets/7a8e2746-371d-41d6-ac1c-94eb06473e9f)
@@ -157,9 +161,14 @@ In questo studio, è stato sviluppato un sistema di rilevamento assistito da com
 Le misurazioni sono state eseguite con una pedana di forza composta da quattro tensometri, in grado di rilevare 12 segnali di forza nelle tre direzioni con una precisione di 0,1 N. ECG e forza sono stati registrati simultaneamente con un convertitore AD a 24 bit a 1 kHz, producendo 13 serie temporali. 
 
 L'annotazione dei dati è effettuata manualmente sulla base delle osservazioni di misurazione.
+
 Ogni misurazione è rappresentata da una matrice, in cui le righe corrispondono ai singoli campioni registrati ogni 1 ms e le 14 colonne contengono un valore di carico dei dati (0 per corretto, 1 per non corretto), dodici segnali di forza e il valore ECG.
 
 
-Nel contesto di questo studio, le curvature di Cartan sono utilizzate per analizzare i segnali di ballistocardiografia (BCG) al fine di rilevare disturbi respiratori. Le curvature, derivate dalla geometria differenziale, amplificano le parti significative dei segnali BCG legate ai disturbi respiratori e filtrano i movimenti non rilevanti, come i movimenti collettivi del corpo. Poiché sono invariate rispetto ai movimenti del corpo, le curvature di Cartan permettono di eliminare l'influenza di cambiamenti di posizione, migliorando la precisione nella rilevazione dei disturbi respiratori senza l'uso simultaneo di segnali ECG.
+Nel contesto di questo studio, le curvature di Cartan sono utilizzate per analizzare i segnali di ballistocardiografia (BCG) al fine di rilevare disturbi respiratori. 
 
-Nel lavoro descritto, segnali BCG ed ECG vengono analizzati insieme da una rete neurale CNN per classificare il respiro come normale o disturbato. Tuttavia, l'obiettivo futuro è eliminare la necessità di ECG, utilizzando solo i dati BCG e le curvature di Cartan per calcolare un "trigger" che rilevi autonomamente i disturbi respiratori, consentendo così l'automazione del sistema e l'esplorazione di altri aspetti dell'emodinamica umana.
+Le curvature, derivate dalla geometria differenziale, amplificano le parti significative dei segnali BCG legate ai disturbi respiratori e filtrano i movimenti non rilevanti, come i movimenti collettivi del corpo. Poiché sono invariate rispetto ai movimenti del corpo, le curvature di Cartan permettono di eliminare l'influenza di cambiamenti di posizione, migliorando la precisione nella rilevazione dei disturbi respiratori senza l'uso simultaneo di segnali ECG.
+
+Nel lavoro descritto, segnali BCG ed ECG vengono analizzati insieme da una rete neurale CNN per classificare il respiro come normale o disturbato.
+
+Tuttavia, l'obiettivo futuro è eliminare la necessità di ECG, utilizzando solo i dati BCG e le curvature di Cartan per calcolare un "trigger" che rilevi autonomamente i disturbi respiratori, consentendo così l'automazione del sistema e l'esplorazione di altri aspetti dell'emodinamica umana.
