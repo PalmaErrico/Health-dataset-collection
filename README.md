@@ -111,6 +111,8 @@ Inoltre, per validare l'accuratezza dei componenti cardiaci e respiratori estrat
 ## **DATASET3: Apnea-ECG**
 
 LINK DATASET: https://www.kaggle.com/datasets/paulopinheiro/the-apnea-ecg-database-v100/data OR  https://physionet.org/content/apnea-ecg/1.0.0/
+
+LINK ARTICOLO : https://ieeexplore.ieee.org/document/898505
      
 Pubblicato: 10 febbraio 2000. Versione: 1.0.0
 
