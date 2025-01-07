@@ -120,7 +120,7 @@ I dati in questo elenco sono stati forniti dal Dr. Thomas Penzel della Phillips-
 
 I dati comprendono 70 registrazioni, suddivise in un set di apprendimento (35 record: da a01 a a20, da b01 a b05 e da c01 a c10) e un set di test (35 record:da x01 a x35), con durate tra 7 e 10 ore.
 
-Ogni registrazione include segnali ECG continui, annotazioni di apnea basate sulla respirazione, e annotazioni QRS automatizzate. Otto registrazioni dispongono anche di segnali respiratori toracici e addominali, flusso d'aria oronasale e SpO2. I file associati includono dati ECG (.dat), intestazioni (.hea), annotazioni di apnea (.apn) per il set di apprendimento, e annotazioni QRS automatiche (.qrs).
+Ogni registrazione include segnali ECG continui, annotazioni di apnea basate sulla respirazione, e annotazioni QRS automatizzate. Otto registrazioni (da a01 ad a04, b01 e da c01 a c03) dispongono anche di segnali respiratori toracici e addominali, flusso d'aria oronasale e SpO2. I file associati includono dati ECG (.dat), intestazioni (.hea), annotazioni di apnea (.apn) per il set di apprendimento, e annotazioni QRS automatiche (.qrs).
 
 
 Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit e PhysioNet: componenti di una nuova risorsa di ricerca per segnali fisiologici complessi. Circolazione [Online]. 101 (23), pp. e215-e220.
