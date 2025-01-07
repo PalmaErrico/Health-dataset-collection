@@ -118,7 +118,7 @@ Pubblicato: 10 febbraio 2000. Versione: 1.0.0
 
 I dati in questo elenco sono stati forniti dal Dr. Thomas Penzel della Phillips-University, Marburg, Germania. 
 
-I dati comprendono 70 registrazioni, suddivise in un set di apprendimento (35 record: da a01 a a20, da b01 a b05 e da c01 a c10) e un set di test (35 record:da x01 a x35), con durate tra 7 e 10 ore.
+I dati comprendono 70 registrazioni ( ogni registrazione è associata a file diversi), suddivise in un set di apprendimento (35 record: da a01 a a20, da b01 a b05 e da c01 a c10) e un set di test (35 record:da x01 a x35), con durate tra 7 e 10 ore.
 
 Ogni registrazione include segnali ECG continui, annotazioni di apnea basate sulla respirazione, e annotazioni QRS automatizzate. Otto registrazioni (da a01 ad a04, b01 e da c01 a c03) dispongono anche di segnali respiratori toracici e addominali, flusso d'aria oronasale e SpO2. I file associati includono dati ECG (.dat), intestazioni (.hea), annotazioni di apnea (.apn) per il set di apprendimento, e annotazioni QRS automatiche (.qrs).
 
